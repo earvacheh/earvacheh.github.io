@@ -4,6 +4,7 @@
     grid-template-rows: 100px auto auto 100px;
     grid-template-areas: "hh" "mc" "rc" "hf";
     margin: 10px;
+    max-width: 100vw;
 }
 
 .homepage-header {

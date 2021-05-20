@@ -1,0 +1,137 @@
+.blog-post-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 100px auto auto 100px;
+    grid-template-areas: "hd" "sd" "main" "ft";
+    margin: 10px;
+}
+
+.blog-post-nestedGrid {
+    display: grid;
+}
+
+.blog-post-multiple-choice {
+    /*grid-template-columns: 50% 50%;*/
+    /*grid-template-rows: 25% 25% 25% 25%;*/
+}
+
+.blog-post-nestedGrid>* {}
+
+.box {
+    background: #F8FA9D;
+}
+
+.blog-post-header {
+    /* row start/column start/ row end/ column end */
+    grid-area: hd;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: rgb(226, 189, 133);
+    background-image: url(../images/home-header.jpg);
+    background-size: cover;
+    border-radius: 12px;
+    color: rgb(231, 226, 243);
+}
+
+.blog-post-footer {
+    grid-area: ft;
+    background-color: rgb(226, 189, 133);
+    border-radius: 12px;
+    background-image: url(../images/home-header.jpg);
+    background-size: cover;
+}
+
+.blog-post-sidebar {
+    grid-area: sd;
+}
+
+.blog-post-content {
+    grid-area: main;
+}
+
+.blog-post-header-title {
+    margin: 10px;
+}
+
+.radiocontainer {
+    background-color: #d6eec8;
+    display: block;
+    position: relative;
+    padding: 10px 10px 50px 50px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+    word-wrap: break-word;
+    border-radius: 5px;
+    margin-right: 40px;
+}
+
+.checkmark {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 19px;
+    width: 19px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.radiocontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radiocontainer input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+.blogpost-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 250px;
+    border: 1px solid #c9c9c9;
+    border-radius: 12px;
+    background-color: white;
+    margin: 10px;
+}
+
+.my-img {
+    max-height: 60px;
+    max-width: 60px;
+    border-radius: 50%
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    padding: 35px 100px;
+    color: rgb(231, 226, 243);
+}
+
+.tab {
+    color: rgb(231, 226, 243);
+    text-transform: uppercase;
+    text-transform: uppercase;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.post-img {
+    max-height: 200px;
+    max-width: 800px;
+    border-radius: 12px;
+}
+
+.blogimg-box {
+    display: flex;
+    justify-content: center;
+    min-width: 250px;
+    border-radius: 12px;
+    background-color: rgb(252, 248, 251);
+    margin: 10px;
+}

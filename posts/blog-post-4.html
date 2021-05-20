@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exercise 1</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <div class="blog-post-container">
+        <div class="blog-post-header">
+            <div class="blog-post-header-title">
+                <h1>secondOpinion</h1>
+            </div>
+            <nav class="nav-container">
+                <a class="tab" href="../index.html">My Posts</a>
+                <a class="tab" href="../allposts.html">All Posts</a>
+                <a class="tab" href="../index.html">Sign Out</a>
+            </nav>
+        </div>
+
+        <div class="blog-post-sidebar">
+
+            <div class="blogpost-box">
+                <div class="profile-pic-box">
+                    <img class="recent-img" src="../images/user1.jpg" alt="This is recent-img class" />
+                    <a class="profile-link">Tracy N.</a>
+                    <time datetime="2021-04-15T05:34:18.211008Z" title="Thu Apr 15 2021 05:34:18 GMT-0400 (Eastern Daylight Time)">5:34 PM</time>
+                </div>
+                <div class="recent-box-content">
+                    <h3>Pellentesque maximus</h3>
+                    <span>April 15, 2021</span>
+                    <p>
+                        Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus.
+                    </p>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="blog-post-content">
+            <!-- nest grid here -->
+            <div class="blog-post-nestedGrid">
+                <h1>Please share your opinion!</h1>
+                <div class="blog-post-multiple-choice">
+                    <form action="">
+                        <label class="radiocontainer" id="label1">Duis lectus mi, aliquam <input type="radio" name="quiz"
+                id="1" onclick="clickRadio(this)" value="1"><span class="checkmark"></span>
+            </label>
+                        <label class="radiocontainer" id="label3"> aliquam porttitor lacus.
+              <input type="radio" name="quiz" id="3" onclick="clickRadio(this)" value="3"><span
+                class="checkmark"></span>
+            </label>
+                        <label class="radiocontainer" id="label2"> Pellentesque maximus
+              <input type="radio" name="quiz" id="2" onclick="clickRadio(this)" value="2"><span
+                class="checkmark"></span>
+            </label>
+                        <label class="radiocontainer" id="label4">Duis lectus mi, aliquam in mi quis,
+              <input type="radio" name="quiz" id="4" onclick="clickRadio(this)" value="4"><span
+                class="checkmark"></span>
+            </label>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="blog-post-footer">Footer</div>
+    </div>
+</body>
+
+</html>

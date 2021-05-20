@@ -1,0 +1,10 @@
+@media (min-width: 650px) {
+    .homepage-container {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 40% 30% 30%;
+        grid-template-rows: 100px auto 100px;
+        grid-template-areas: "hh hh hh" "mc mc rc" "hf hf hf";
+        margin: 10px;
+    }
+}

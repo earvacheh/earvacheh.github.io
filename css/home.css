@@ -1,6 +1,7 @@
 .homepage-container {
     display: grid;
     grid-gap: 10px;
+    grid-template-columns: 100%;
     grid-template-rows: 100px auto auto 100px;
     grid-template-areas: "hh" "mc" "rc" "hf";
     margin: 10px;
